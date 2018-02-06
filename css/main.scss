@@ -34,28 +34,78 @@
 // }
 
 // variables.less
-$theme-primary: #D3D3D3; //#F05F40; - this is the default orange
+$theme-primary: #18BC9C; //#F05F40; - this is the default orange
 $theme-dark: #222;
-$theme-lightgrey: #E5E5E5;
-$yellow: #ff0;
-$black: #000;
-$silver: #c0c0c0;
-$white: #fff;
-$gray-200: #E5E5E5;
-$primary: #D3D3D3;
-$color_porcelain_approx: #edf3f3;
-$black_10: rgba(0,0,0,.1);
-$color_alto_approx: #ddd;
-$white: #fff;
-$black_20: rgba(0,0,0,.2);
-$black_40: rgba(0,0,0,.4);
-$color_tropical_blue_approx: #c3d8f5;
-$black_30: rgba(0,0,0,.3);
+$theme-lightgrey: #E5EAEE;
+$teal: #18BC9C;
+$black: #000000;
+$white: #FFFFFF;
+$bgcolor: #E5EAEE;
+
+$primary-color: #F6C;
+$text-color: #2E2D33;
+$accent-color: #C99065;
+$accent-light: #e1c184;
+$bg-color: white;
+$link-color: $accent-color;
+$selection-color: #FFF498;
+$accent: #C99065;
+
+
+
+$sunset: #e1c184;
+$bgcolor: #e5eaee;
+
+
+$main-text: #7f8c97;
+$link: #acb7c0;
+$background: #e5eaee;
+
+$color-1: #303e49;
+$color-2: #c99065;
+$color-3: #ffffff;
+$color-4: #c99065;
+$color-5: #c99065;
+
+
+
+$primary-font: 'Droid Serif', serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+
+$base-font-family:              Helvetica, sans-serif;
+$base-line-height:              1.5em;
+$horizontal-spacing-unit:       50px;
+$vertical-spacing-unit:         40px;
+$nav-height:                    56px;
+
+$img_spacing: 5px;
+$img_height: 275px;
+$caption_font_size: 12px;
+$caption_color: #aaa;
+
+$red:  #FF3636;
+$orange: #F29105;
+$blue: #2698BA;
+$green: #11D68B;
+$lime_green: #B7D12A;
+$purple: #B509AC;
+
+
+$grey-color-dark: #333;
+$grey-color-light: #ddd;
+$text-color:     #666;
+
+
+$theme-color:   $red;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
         "base",
-		"contact"
+		"contact",
+		"layout",
+		"bourbon",
+		"history"
 ;

@@ -11,6 +11,7 @@
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+	background-color: rbga(0,0,0,0.5); 
 }
 
 @mixin button-variant($color, $background, $border)
@@ -63,4 +64,24 @@
 @mixin serif-font()
 {
 	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+// rem fallback - credits: http://zerosixthree.se/
+
+@function calculateRem($size)
+{
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+
+@mixin font-size($size)
+{
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+// border radius
+
+@mixin border-radius($radius: 0.25em)
+{
+  border-radius: $radius;
 }
