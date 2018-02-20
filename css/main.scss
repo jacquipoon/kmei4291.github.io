@@ -51,11 +51,8 @@ $link-color: $accent-color;
 $selection-color: #FFF498;
 $accent: #C99065;
 
-
-
 $sunset: #e1c184;
 $bgcolor: #e5eaee;
-
 
 $main-text: #7f8c97;
 $link: #acb7c0;
@@ -67,11 +64,8 @@ $color-3: #ffffff;
 $color-4: #c99065;
 $color-5: #c99065;
 
-
-
 $primary-font: 'Droid Serif', serif;
 $secondary-font: 'Open Sans', sans-serif;
-
 
 $base-font-family:              Helvetica, sans-serif;
 $base-line-height:              1.5em;
@@ -91,17 +85,26 @@ $green: #11D68B;
 $lime_green: #B7D12A;
 $purple: #B509AC;
 
-
 $grey-color-dark: #333;
 $grey-color-light: #ddd;
 $text-color:     #666;
 
-
 $theme-color:   $red;
+
+//ADded temporarily
+$card-padding: 24px !default;
+$gutter-width: 1.5rem !default;
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
+$card-bg-color: #fff !default;
+$card-link-color: #ffab40 !default;
+$card-link-color-light: #ffd180 !default;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+//        "color",
+//        "variables",
         "mixins",
         "base",
 		"contact",

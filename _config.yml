@@ -6,7 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 twitter_username: farming_data
-facebook_username: kmei91  #FIXME 
+facebook_username: farmingdata.io  
 linkedin_username: company/farmingdata
 
 # Build settings
