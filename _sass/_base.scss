@@ -286,9 +286,10 @@ header {
 
 .portfolio-box {
     position: relative;
-    display: block;
+    display: flex;
     max-width: 650px;
-    margin: 0 auto;
+    margin: auto auto;
+    justify-content: center;
     .portfolio-box-caption {
         color: white;
 		opacity: 0;
@@ -307,7 +308,10 @@ header {
             top: 50%;
             transform: translateY(-50%);
             .project-category,
-            .project-name {
+            .project-name,
+            .popup-trigger,
+            .popup,
+            .popup-btn-close,{
                 @include sans-serif-font;
                 padding: 0 15px;
             }
@@ -326,7 +330,7 @@ header {
 			opacity: 1;
         }
     }
-    @media (min-width: 768px) {
+    @media (min-width: 100px) {
         .portfolio-box-caption {
             .portfolio-box-caption-content {
                 .project-category {
@@ -335,8 +339,45 @@ header {
                 .project-name {
                     font-size: 22px;
                 }
+                .popup-trigger{ 
+                    display: block;
+                    margin: 0 auto;
+                    padding: 20px;
+                    max-width: 260px; 
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-align: center;
+                    text-transform: uppercase;
+                    line-height: 24px;
+                    cursor: pointer;
+                }
+                .popup {
+                    display: none;
+                    position: block;
+                    top: 100px;
+                    left: 50%;
+                    width: 700px;
+                    margin-left: -350px;
+                    padding: 50px 30px;
+                    background: #fff;
+                    color: #333;
+                    font-size: 19px;
+                    line-height: 30px;
+                    border: 10px solid #150E2D;
+                    z-index: 9999;
+                }
+                .popup-btn-close {
+                    position: absolute;
+                    top: 8px; 
+                    right: 14px;
+                    color: #4EBD79;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
             }
-        }
+		}
     }
 }
 
@@ -410,58 +451,6 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: $theme-dark;
 }
-
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-
-  &:target {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-
-  h2 {
-    margin-top: 0;
-  }
-  
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-    
-    &:hover {
-      color: #06D85F;
-    }
-  }
-  
-  .content {
-    max-height: 30%;
-    overflow: auto;
-  }
-}
-
 
 .actor {
   stroke-width: 2;
