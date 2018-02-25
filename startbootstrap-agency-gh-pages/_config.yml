@@ -1,0 +1,18 @@
+title:             Farming Data
+email:             info@farmingdata.io
+description:       An agritech startup
+author:            Farming Data
+baseurl:           ""
+url:               ""
+
+# Social Profiles
+twitter_username:  farming_data
+facebook_username: farmingdata.io
+
+# Build settings
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
