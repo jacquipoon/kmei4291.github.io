@@ -9,7 +9,7 @@ background: '/img/posts/2017-03-17.jpg'
 ---
 
 ### So, what exactly *is* our idea?  
-#### What is our startup doing specifically?
+#### And what is our startup doing specifically?
 
 In the following video, Jacqui will tell what Farming Data is all about. So, check it out and come learn about us!  
 
@@ -18,3 +18,6 @@ In the following video, Jacqui will tell what Farming Data is all about. So, che
 <div class="text-center">
 <iframe src="https://player.vimeo.com/video/206495368" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
+
+<br>
+*If you have any questions or want to connect with us, feel free to contact us through email (info@farmingdata.io) or Twitter ([@farming_data](https://twitter.com/farming_data))!*

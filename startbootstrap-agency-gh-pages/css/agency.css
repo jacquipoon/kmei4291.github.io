@@ -105,7 +105,10 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #212529; /* darkgrey colour #212529*/
+  background-color: #b0b0b0; /* darkgrey colour #212529*/
+  -webkit-box-shadow: 0 8px 6px -6px #999; /* settings for drop shadow */
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
 }
 
 #mainNav .navbar-toggler {
@@ -120,9 +123,20 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  color: white; /* chrysanthemum yellow #fed136 teal #00897B*/
+  color: #212529; /* chrysanthemum yellow #fed136 teal #00897B*/
   font-family: 'Tulpen One', 'Helvetica Neue', Helvetica, Arial, cursive;
-  font-size: 40px !important;
+  font-size: 40px;
+  /* width:41px; new */
+  /* height:40px; /* new */
+  background-image:url(../img/logos/farmingdatalogo-icon-smallest.png); /* new */
+  background-repeat:no-repeat; /* new */
+  margin:5px 0 0 0px; /*better position*/ /* new */
+}
+
+#mainNav .navbar-brand-name h1 {
+  color: #212529; /* chrysanthemum yellow #fed136 teal #00897B*/
+  font-family: 'Tulpen One' !important, 'Helvetica Neue', Helvetica, Arial, cursive;
+  font-size: 40px;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -132,9 +146,9 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
   font-weight: 400;
-  padding: 0.75em 0;
+  padding: 0.5em 0;
   letter-spacing: 1px;
-  color: white;
+  color: #212529; /* white */
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -144,32 +158,64 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:0px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: #FAFAFA; /* transparent */
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    display: block;
+    /* width:103px; new */
+    /* height:100px; /* new */
+    background-image:url(../img/logos/farmingdatalogo-icon-biggest.png); /* new */
+    background-repeat:no-repeat;  /* new */
+  }
+  #mainNav .navbar-brand-name h1 {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
-    padding: 1.1em 1em !important;
+    padding: 0.5em 1em !important;
   }
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529; /* dark grey #212529 */
+     /* color: #fff; white !important / #212529*/ /* sets font-color of brand-name */
+    background-color: #FAFAFA; /* dark grey #212529 */
   }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
+  #mainNav.navbar-shrink .navbar-brand { /*doesn't do anything yet */
+    font-size: 80%;
+    color: white; /* !important */
+    display: block;
+    width:51px;
+    height:50px;
+    background-image:url(../img/logos/farmingdatalogo-icon-juggler.png);
+    background-repeat:no-repeat;
+    background-position: 75% 25%;
+    padding:0.5em 0.5em;
+  }
+  #mainNav.navbar-shrink .navbar-brand-name h1 {
+    font-size: 90%;
+    color: white;
     padding: 12px 0;
   }
+  /* #mainNav.navbar-shrink .navbar-nav>li>a { /* #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link{color:#fff}
+    color: #fff;
+  }
+  /* #mainNav .navbar-shrink .navbar-nav>li>a:hover { /
+  background-color: #B0B0B0;
+  color: red;
+  }*/
 }
 
 header.masthead {
